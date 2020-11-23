@@ -1,7 +1,9 @@
 const mongoose = require('mongoose');
-const config = ('../config/db');
+const {
+  DATABASE_DEV,
+} = require('../controllers/keys');
 
 module.exports = () => {
     mongoose.Promise = require('bluebird');
-    mongoose.connect("mongodb://lconder:novidosN0!@ds056419.mlab.com:56419/demo");
+    mongoose.connect(DATABASE_DEV);
 };

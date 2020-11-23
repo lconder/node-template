@@ -1,0 +1,30 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "camelcase": "off",
+    "no-await-in-loop": "off",
+    "linebreak-style": "off",
+    "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "no-restricted-syntax": "off",
+    "no-nested-ternary": "off",
+    "no-mixed-operators": "off",
+    "no-return-await": "off",
+    "no-shadow": "off",
+    "no-param-reassign": "off"
+  }
+}

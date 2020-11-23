@@ -6,9 +6,9 @@ module.exports = app => {
     const joi = require('express-joi-middleware');
     const inputs = require('../utils/inputs');
 
-    const index_controller = require('../controllers/index');
+    const controllers = require('../controllers/index');
 
-    api_routes.get('/index', index_controller.sayHello);
+    api_routes.get('/', controllers.main.sayHello);
 
 
     app.use('/', api_routes);

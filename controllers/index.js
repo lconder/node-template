@@ -1,12 +1,10 @@
+const controllers = [
+	'keys',
+	'main',
+];
 
-
-/*async */function sayHello(req, res, next) {
-
-    res.status(200).send('Hello World!');
-
-}
-
-
-module.exports = {
-    sayHello
-};
+controllers.forEach( (controller) => {
+	const controller_name = controller.replace('/', '_');
+	// eslint-disable-next-line import/no-dynamic-require,global-require
+ 	module.exports[controller_name] = require(`../controllers/${controller}`);
+});

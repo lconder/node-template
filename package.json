@@ -1,26 +1,32 @@
 {
-  "name": "express-config",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "node-template",
+  "version": "1.0.1",
+  "description": "Change for your description",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "mocha || true"
   },
-  "author": "",
+  "author": "Luis Conde Rodríguez",
   "license": "ISC",
   "dependencies": {
     "bluebird": "^3.5.4",
     "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
     "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
     "express": "^4.16.4",
     "express-joi-middleware": "^1.0.0",
     "joi": "^14.3.1",
+    "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.2.1",
     "mongoose": "^5.5.0",
     "morgan": "^1.9.1"
   },
   "apidoc": {
     "title": "API DOC",
-    "url": "localhost:3000",
+    "url": "localhost:3002",
     "name": "_API",
     "version": "0.0.1",
     "description": "API REST"
